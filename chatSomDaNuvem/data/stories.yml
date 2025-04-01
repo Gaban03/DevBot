@@ -20,12 +20,25 @@ stories:
           - problema: "plano"
       - action: utter_problema_plano
 
+  - story: despedida 
+    steps:
+      - intent: despedida
+      - action: utter_despedida
+
   - story: problema de aplicativo
     steps:
       - intent: problema_aplicativo
       - slot_was_set:
           - problema: "aplicativo"
       - action: utter_problema_aplicativo
+
+  - story: problema de aplicativo nao abrir
+    steps:
+      - intent: problema_aplicativo_nao_abre
+      - slot_was_set:
+          - problema: "abre"
+          - problema: "fecha"
+      - action: utter_problema_aplicativo_nao_abre
 
   - story: encaminhamento para atendente
     steps:

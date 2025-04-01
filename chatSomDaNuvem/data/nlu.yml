@@ -29,6 +29,13 @@ nlu:
       - Estou com problemas no aplicativo
       - O app travou
 
+  - intent: problema_aplicativo_nao_abre
+    examples: |
+      - O aplicativo não abre
+      - O app está fechando sozinho
+      - Estou com problemas em abrir o aplicativo
+      - O app travou quando tento abrir
+  
   - intent: despedida
     examples: |
       - Até logo
@@ -39,5 +46,7 @@ nlu:
   - intent: problema_geral
     examples: |
       - Tenho um problema
+      - Não consegui resolver
+      - Está muito dificil 
       - Preciso de ajuda
       - Não consigo resolver o meu problema
